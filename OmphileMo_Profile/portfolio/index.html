@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omphile Mosingathi - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .scroll-down {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      cursor: pointer;
+      animation: bounce 2s infinite;
+      color: white;
+    }
+    .scroll-down i {
+      font-size: 2rem;
+    }
+    .scroll-down p {
+      font-size: 1rem;
+      margin-top: 5px;
+      font-weight: 500;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translate(-50%, 0); }
+      50% { transform: translate(-50%, -10px); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <video class="back-vid" loop autoplay muted playsinline src="videos/galaxy.mp4" type="video/mp4"></video>
+  </div>
+
+  <header>
+    <div class="left">
+      <img src="images/miladicode.png" alt="Omphile Mosingathi" class="profile-pic" />
+      <h1><span style="color: #72a1de;">>Omphile</span>.Dev</h1>
+    </div>
+
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+
+    <div class="box-icons">
+      <a href="mailto:omphilemosingathi@gmail.com"><i class='bx bxs-envelope'></i></a>
+    </div>
+  </header>
+
+  <div class="blackhole-box">
+    <video loop autoplay muted playsinline src="videos/blackhole.mp4" type="video/mp4"></video>
+  </div>
+
+  <section class="hero">
+    <div class="hero-info autoBlur">
+      <div class="hero-info-title">
+        <i class='bx bxl-sketch'></i>
+        Welcome to my portfolio
+      </div>
+      <h1>Building <span class="gradient">smart</span> and scalable <span class="gradient">solutions</span></h1>
+      <p>
+        I'm Omphile, a software and data science enthusiast with experience in front-end, back-end, AI tools, and cloud platforms. Let’s build something impactful together.
+      </p>
+      <button onclick="window.location.href='mailto:omphilemosingathi@gmail.com'">
+        <i class='bx bx-send'></i> Contact Me
+      </button>
+    </div>
+
+    <div class="hero-vid-box">
+      <video class="autoBlur" autoplay loop muted playsinline src="videos/hero-video.mp4" type="video/mp4"></video>
+    </div>
+
+    <!-- Scroll Down Prompt -->
+    <div class="scroll-down" onclick="document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });">
+      <i class='bx bx-mouse'></i>
+      <p>Scroll down</p>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="info-section">
+    <h1 class="section-title">Hello, There 👋</h1>
+    <div class="info-cards">
+      <div class="card">
+        <h1>About Me</h1>
+        <p>
+          I’m Omphile Mosingathi, a passionate software developer and IT lecturer based in Johannesburg, South Africa. With a BSc Honours in Data Science and hands-on experience in education, systems development, and AI tools like Azure AI Foundry and Copilot, I am dedicated to building meaningful, data-driven solutions that solve real-world problems.
+        </p>
+        <img src="images/grid1.png" alt="Developer Profile" />
+      </div>
+
+      <div class="card">
+        <h1>Tech Stack</h1>
+        <p>
+          I work with Python, SQL, Java, R, HTML, CSS, JavaScript, and the Microsoft Power Platform. I have hands-on experience with cloud-based tools like Azure, Copilot Studio, and Dataverse. I’m constantly learning new tech to stay ahead in the rapidly evolving field of AI and data.
+        </p>
+        <img src="images/grid2.png" alt="Tech Stack" />
+      </div>
+
+      <div class="card">
+        <h1>Remote Work Ready</h1>
+        <p>
+          I'm based in South Africa but open to hybrid and remote opportunities. I enjoy collaborating with cross-functional teams and thrive in dynamic environments.
+        </p>
+        <video autoplay loop muted playsinline src="videos/glob.mp4" type="video/mp4"></video>
+        <button onclick="window.location.href='mailto:omphilemosingathi@gmail.com'">
+          <i class='bx bx-send'></i> Contact Me
+        </button>
+      </div>
+
+      <div class="card">
+        <h1>My Passion</h1>
+        <p>
+          I love transforming business problems into smart, scalable digital solutions. Whether it’s developing POCs with low-code platforms or diving deep into data pipelines, I believe in the power of tech to uplift and empower.
+        </p>
+        <img src="images/grid4.png" alt="Coding Passion" />
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="my-projects">
+    <h1 class="section-title">My Projects 👨‍💻</h1>
+    
+    <!-- Project 1 -->
+    <div class="project-card">
+      <div class="project-vidbox autoBlur">
+        <video src="videos/project2.mp4"></video>
+      </div>
+      <div class="project-info">
+        <h1>Developer <span class="gradient">Portfolio</span></h1>
+        <p>
+          A personal site showcasing my skills, work, and values. It’s responsive, clean, and reflects my mission: to solve problems through code and creativity.
+        </p>
+        <button><i class='bx bx-link-external'></i> Check it out on GitHub</button>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <div class="project-vidbox">
+        <video src="videos/proj2.mp4"></video>
+      </div>
+      <div class="project-info">
+        <h1>Todo <span class="gradient">App</span></h1>
+        <p>
+          A sleek task manager app for organizing daily goals with a simple and intuitive interface.
+        </p>
+        <button><i class='bx bx-link-external'></i> Check it out on GitHub</button>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <div class="project-vidbox">
+        <video src="videos/notes.mp4"></video>
+      </div>
+      <div class="project-info">
+        <h1>Note <span class="gradient">Taking App</span></h1>
+        <p>
+          A minimalist app for capturing and managing notes on the go — lightweight and effective.
+        </p>
+        <button><i class='bx bx-link-external'></i> Check it out on GitHub</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="skills-section">
+    <h1 class="section-title">My Skills 💪</h1>
+
+    <div class="skills-box">
+      <img class="skills-image" src="images/digital brain.png" />
+    </div>
+
+    <div class="designer">
+      <h1 class="gradient">Designer <i class='bx bx-laptop'></i></h1>
+      <p>
+        Skilled in web design using HTML, CSS, Figma, and Canva. I focus on crafting user-friendly interfaces and clean digital layouts for web and mobile.
+      </p>
+    </div>
+
+    <div class="coder">
+      <h1 class="gradient">Coder <i class='bx bx-code-alt'></i></h1>
+      <p>
+        Proficient in full-stack development using Java, Python, JavaScript, and SQL. Experience with GitHub, cloud platforms like Azure, and the Power Platform for low-code AI-driven apps.
+      </p>
+    </div>
+
+    <div class="slider" style="--width: 100px; --height: 100px; --quantity: 9;">
+      <div class="list">
+        <div class="item" style="--position: 1"><img src="images/1.png" /></div>
+        <div class="item" style="--position: 2"><img src="images/2.png" /></div>
+        <div class="item" style="--position: 3"><img src="images/3.png" /></div>
+        <div class="item" style="--position: 4"><img src="images/4.png" /></div>
+        <div class="item" style="--position: 5"><img src="images/5.png" /></div>
+        <div class="item" style="--position: 6"><img src="images/6.png" /></div>
+        <div class="item" style="--position: 7"><img src="images/7.png" /></div>
+        <div class="item" style="--position: 8"><img src="images/8.png" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <h1 class="section-title">Let’s Connect ☕️</h1>
+    <div class="social-box">
+      <a href="#"><i class='bx bxl-github'></i> View My GitHub</a>
+      <a href="#"><i class='bx bxl-linkedin-square'></i> Connect on LinkedIn</a>
+      <a href="mailto:omphilemosingathi@gmail.com"><i class='bx bxs-envelope'></i> Email Me</a>
+      <a href="#"><i class='bx bxl-whatsapp'></i> +27 68 357 0870</a>
+    </div>
+
+    <div class="contact-box">
+      <p>Have an idea, a project or just want to chat tech? Drop me a message!</p>
+      <p>Full Name</p>
+      <input type="text" placeholder="Enter your name" />
+      <p>Email</p>
+      <input type="email" placeholder="Enter your email" />
+      <p>Message</p>
+      <input class="input-message" type="text" placeholder="Enter your message" />
+      <button><i class='bx bx-send'></i> Send</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
